@@ -1,6 +1,27 @@
+// Ma version (Aide Google)
+
 function reverse(str) {
 
+    let split = str.split("")
+    let reverse = split.reverse()
+    let result = reverse.join('')
+
+return result 
 }
+
+// Tout seul 
+
+const reverse = str => str.split("").reverse().join("")
+
+// Correction
+
+function reverse(str) {
+
+
+return str.split("").reverse().join("") 
+}
+
+const reverse = str => str.split("").reverse().join("")
 
 
 /* ÉNONCÉ 📚 */
