@@ -1,7 +1,34 @@
-function conversion(deg) {
+// Ma version 
 
+function conversion(deg) {
+        
+        if(typeof deg === "string" ){
+            console.log("Données en entrée non-correctes.");
+            return;
+        }
+        else {
+            let calcul = deg * (9/5) +32;
+            let result = Math.floor(calcul)
+            
+            return result;
+            
+        }
 }
 
+// Version corrigée
+
+function conversion(deg){
+    if (typeof deg === "number") {
+        return Math.trunc(deg * 9/5 +32);
+    }
+    else {
+        return "Données en entrée non-correctes"
+    }
+}
+
+// autre possibilitée
+
+const conversion = deg => typeof deg === "number" ? Math.trunc(deg * 9/5 + 32) : "Données en entrée non-correctes"
 
 /* ÉNONCÉ 📚 */
 
