@@ -1,4 +1,14 @@
+// correction
+
 function divideArray(arr, subArrayLength) {
+    const result = []
+    
+    for(i = 0; i < arr.length; i += subArrayLength) {
+        result.push(arr.slice(i, i + subArrayLength))
+
+        
+    }
+return result;   
 
 }
 
