@@ -1,6 +1,30 @@
+// ma version
+
 function similarEnd(str, end) {
-  
+ if(str.slice(0, -end.length ) === end) {               // c'est le zéro qui merde. qui fait que ca ne marche pas 
+    return true
+ } 
+  else {
+     return false
+  }
 }
+
+// correction 
+
+function similarEnd(str, end) {
+    const strEnd = str.slice(-end.length);
+    
+    if(strEnd === end) {
+       return true
+    } 
+     else {
+        return false
+     }
+   }
+
+   // autre méthode
+
+   const similarEnd = (str, end) => str.slice(-end.length) === end ? true : false
 
 
 /* ÉNONCÉ 📚 */
