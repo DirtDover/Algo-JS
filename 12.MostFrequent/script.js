@@ -1,6 +1,24 @@
+//Corrigé
+
 function mostFrequent(arr) {
 
+        let mostFrequenItem = arr[0];
+        const occurences = {}
 
+        for(let i =0; i < arr.length; i++){
+            const current = arr[i]
+            
+        if(occurences[current]) {
+            occurences[current]++;
+        }
+        else {
+            occurences[current] = 1
+        }
+        if(occurences[current] > occurences[mostFrequenItem]) {
+            mostFrequenItem = current;
+        }
+        }
+  return mostFrequenItem;
 }
 
 
