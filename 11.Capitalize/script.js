@@ -1,7 +1,30 @@
-function capitalize(str) {
+// Ma version (ne fonctionne pas) 
 
+function capitalize(str) {
+let strSplit = str.split(' ')
+
+let strFirst = strSplit.map( el => el.charAt(0).toUpperCase())
+let result = strFirst.join(' ')
+console.log(result);
+
+
+return strSplit;
 }
 
+// correction 
+function capitalize(str) {
+    let lowerCaseArray = str.toLowerCase().split(' ')
+    
+    let result = lowerCaseArray.map( word => {
+       return word.replace(word.charAt(0), word.charAt(0).toUpperCase())
+    })
+     
+    return result.join(" ");
+    }
+
+// autre méthode 
+
+const capitalize = str => str.toLowerCase().split(" ").map(word => word.replace(word.charAt(0), word.charAt(0).toUpperCase)).join(" ")
 
 /* ÉNONCÉ 📚 */
 
