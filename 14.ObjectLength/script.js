@@ -1,7 +1,20 @@
+// Corrigé
+
 function objectLength(obj){
 
+    let objLength = 0;
+
+    for(key in obj){
+        if(obj.hasOwnProperty(key)) {
+            objLength++;
+        }
+    }
+    return objLength; 
 }
 
+// autre méthode 
+
+const objectLength = obj => Object.keys(obj).length;
 
 /* ÉNONCÉ 📚 */
 
