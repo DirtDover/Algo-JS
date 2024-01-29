@@ -1,7 +1,42 @@
+// Ma version + google
+
 function largestValues(arr){
 
+let result = []
+
+for(let i = 0; i < arr.length; i++){
+
+  let sortedArray = arr[i].reduce((acc, index) => Math.max(acc, index))
+  result.push(sortedArray);
 }
 
+return result;
+}
+
+// corrigé 
+
+function largestValues(arr){
+
+  const result = []
+  
+  for(let i = 0; i < arr.length; i++){
+  
+    let max = arr[i][0]
+    
+    for(let n = 1; n < arr[i].length; n++){
+      if(arr[i][n] > max){
+        max = arr[i][n]
+      }
+    }
+  result.push(max)
+  }
+  
+  return result;
+  }
+
+  // map() et reduce()
+
+  const largestValues = arr => arr.map(subArr => subArr.reduce((acc, cur) => cur > acc ? cur : acc)) 
 
 /* ÉNONCÉ 📚 */
 
