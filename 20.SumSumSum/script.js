@@ -1,8 +1,18 @@
+// correction 
+
 function sum(min,max) {
+  let accumulator = 0;
 
+  for( let i = min; i<= max; i++){
+    accumulator += i;
+  }
 
+return accumulator
 }
 
+// autre méthode 
+
+const sum = (min, max) => (max * (max + 1) - (min - 1) * min) /2
 
 /* ÉNONCÉ 📚 */
 
