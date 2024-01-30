@@ -1,9 +1,15 @@
+// ma version + internet
+
 function sameLetters(arr) {
 
-  
+  let arrSplit = arr[1].split("")
+  let letterSame = arrSplit.every(el => arr[0].includes(el))
+  return letterSame
 }
 
+// correction 
 
+const sameLetters = arr => arr[1].split("").every(el => arr[0].includes(el))
 /* ÉNONCÉ 📚 */
 
 /*
