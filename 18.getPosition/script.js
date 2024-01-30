@@ -1,7 +1,14 @@
+// corrigé
+
 function getPosition(arr,num) {
+
+  return [...arr, num].sort((a,b) => a - b ).indexOf(num)   // .sort((a,b) => a-b) permet de trié le tableau dans l'ordre croissant. Le [...arr, num] copie le tableau d'origine et le num dasn un autre tableau.
 
 }
 
+// autre méthode 
+
+const getPosition = (arr, num) => [...arr, num].sort((a,b) => a - b ).indexOf(num);
 
 /* ÉNONCÉ 📚 */
 
