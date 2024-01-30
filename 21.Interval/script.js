@@ -1,8 +1,17 @@
-function interval(min,max,nb){
+// ma version 
 
+function interval(min,max,nb){
+  if(nb < max && nb > min) {
+    return true
+  } 
+  else {
+    return false
+  }
 }
 
+// correction
 
+const interval = (min, max, nb) => nb <= max && nb >= min;
 /* ÉNONCÉ 📚 */
 
 
