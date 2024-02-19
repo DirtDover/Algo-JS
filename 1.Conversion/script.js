@@ -15,7 +15,7 @@ function conversion(deg) {
         }
 }
 
-// Version corrigée
+// Version corrigée + test
 
 function conversion(deg){
     if (typeof deg === "number") {
